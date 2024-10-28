@@ -233,6 +233,120 @@ nav ul.menu li a:hover {
     color: #FFFFFF;
 }
 
+/* Third Section Styles */
+.third-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.third-section h2 {
+    color: #B8AAFF;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.services-side {
+    background-color: #1A1336;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.services-side h3 {
+    color: #B8AAFF;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.service-box {
+    background-color: #2C2354;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.service-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.service-title h4 {
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.toggle-icon {
+    font-size: 24px;
+    color: #B8AAFF;
+    transition: transform 0.3s;
+}
+
+.service-box.open .toggle-icon {
+    transform: rotate(45deg); /* Change '+' to 'x' when open */
+}
+
+.service-detail {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 15px;
+}
+
+.service-box.open .service-detail {
+    max-height: 200px; /* Adjust as needed */
+    padding-bottom: 15px;
+}
+
+.service-detail p {
+    margin: 0;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.consultation-button {
+    margin-top: 40px;
+}
+
+.consultation-button a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FFFFFF;
+    color: #07011C;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.consultation-button a:hover {
+    background-color: #B8AAFF;
+    color: #FFFFFF;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-side {
+        width: 100%;
+        max-width: none;
+    }
+}
+
 /* Fourth Section Styles */
 .fourth-section {
     padding: 50px 20px;
