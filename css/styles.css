@@ -16,7 +16,6 @@ a:hover {
 }
 
 /* Header Styles */
-/* Header Styles */
 header {
     background-color: #07011C;
     padding: 20px;
@@ -31,8 +30,8 @@ header {
     position: relative;
 }
 
-.logo {
-    /* Keep the logo on the left */
+.logo img {
+    height: 50px;
 }
 
 .company-name {
@@ -66,17 +65,28 @@ nav ul.menu li a:hover {
 }
 
 /* First Section Styles */
-/* First Section Styles */
 .first-section {
-    padding-top: 250px;
-    padding-bottom: 250px;
-    background-image: url('/images/word-image.jpg'); /* Replace with your image path */
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url('images/your_background_image.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     color: #FFFFFF;
     text-align: left;
+}
+
+.first-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 1, 28, 0.7); /* Dark overlay for readability */
 }
 
 .first-section-container {
