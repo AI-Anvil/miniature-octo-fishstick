@@ -62,7 +62,7 @@ nav ul.menu li a:hover {
 /* First Section Styles */
 .first-section {
     padding: 100px 20px;
-    background-image: url('images/word-image.png'); /* Replace with your image path */
+    background-image: url('/images/word-image.png'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -103,6 +103,16 @@ nav ul.menu li a:hover {
 }
 
 /* Second Section Styles */
+.second-section {
+    background-color: #07011C;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.second-section h2 {
+    color: #B8AAFF;
+}
+
 .second-section .gallery {
     overflow: hidden;
     position: relative;
@@ -119,7 +129,7 @@ nav ul.menu li a:hover {
 
 .gallery-item {
     flex: none;
-    margin: 0 30px; /* Space between images */
+    margin: 0 50px; /* Space between images */
 }
 
 .gallery-item img {
