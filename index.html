@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <title>AI Anvil</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <!-- Calendly link widget end -->
 </head>
-    <script src="js/script.js"></script>
 <body>
     <!-- Header -->
     <header>
         <div class="header-container">
             <!-- Logo on the top left -->
             <div class="logo">
-                <img src="images/ai-anvil-logo.png" alt="AI Anvil Logo">
+                <img src="images/logo.png" alt="AI Anvil Logo">
             </div>
             <!-- Company name in the middle -->
             <div class="company-name">
@@ -22,7 +25,7 @@
             <nav>
                 <ul class="menu">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#consultation">Book Consultation</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#blog">Blog</a></li>
                 </ul>
             </nav>
@@ -34,14 +37,9 @@
         <!-- First Section -->
         <section id="home" class="first-section">
             <div class="first-section-container">
-                <!-- Left half with title and sub-text -->
-                <div class="left-half">
-                    <h2>Welcome to AI Anvil</h2>
-                    <p>Your partner in forging AI solutions.</p>
-                </div>
-                <!-- Right half with image -->
-                <div class="right-half">
-                    <img src="images/word-image.png" alt="AI Image">
+                <div class="content">
+                    <h2>AI Anvil: Forging the Future with AI</h2>
+                    <p>Specializing in helping educational institutions and businesses harness the transformative power of Artificial Intelligence.</p>
                 </div>
             </div>
         </section>
@@ -51,35 +49,43 @@
             <h2>Join Our Clients</h2>
             <div class="gallery">
                 <div class="gallery-container">
-                    <!-- Repeat this div for each logo image -->
+                    <!-- Add your client logos here -->
                     <div class="gallery-item">
-                        <img src="images/mc-logo.png" alt="Market Contact">
+                        <img src="images/client1.png" alt="Client Logo 1">
                     </div>
-                    <div class="gallery-item">
-                        <img src="images/atomic-logo.png" alt="Atomic">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/ck-logo.png" alt="CourseKey">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/vl-logo.png" alt="The VL Studios">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/rosalyn-logo.png" alt="Rosalyn">
-                    </div>
-                    <!-- Add more gallery items as needed -->
+                    <!-- Repeat for more logos -->
                 </div>
             </div>
         </section>
 
         <!-- Third Section -->
-        <section id="consultation" class="third-section">
-            <h2>Want to explore how we can collaborate? Schedule a time with our team now</h2>
-            <!-- Calendly embed -->
-            <!-- Calendly inline widget begin -->
-            <div class="calendly-inline-widget" data-url="https://calendly.com/becoachable/ai-anvil-free-consultation" style="min-width:320px;height:700px;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-            <!-- Calendly inline widget end -->
+        <section id="services" class="third-section">
+            <h2>Our Services</h2>
+            <div class="services-list">
+                <!-- Service Items -->
+                <!-- For Businesses -->
+                <div class="service-item">
+                    <h3 onclick="toggleDetails(this)">For Businesses</h3>
+                    <ul class="service-details">
+                        <li>Strategy Development: Formulating AI integration strategies that align with business objectives.</li>
+                        <li>User Discovery: Conducting in-depth analyses to understand user needs and how AI can enhance customer experiences.</li>
+                        <li>Product Development: Guiding the design and development of AI-driven products that stand out in the market.</li>
+                    </ul>
+                </div>
+                <!-- For Schools and Districts -->
+                <div class="service-item">
+                    <h3 onclick="toggleDetails(this)">For Schools and Districts</h3>
+                    <ul class="service-details">
+                        <li>Policy Development: Crafting customized AI policies that align with educational goals and ethical standards.</li>
+                        <li>Implementation Plans: Developing step-by-step strategies to seamlessly introduce AI technologies into the learning environment.</li>
+                        <li>Training Sessions and Workshops: Offering professional development programs to equip educators with the skills and knowledge to effectively use AI tools.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Book Consultation Button -->
+            <div class="consultation-button">
+                <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/becoachable/ai-anvil-free-consultation'});return false;">Book Consultation</a>
+            </div>
         </section>
 
         <!-- Fourth Section -->
@@ -117,7 +123,7 @@
             <!-- Logo and company name on the bottom left -->
             <div class="footer-left">
                 <div class="footer-logo">
-                    <img src="images/ai-anvil-logo.png" alt="AI Anvil Logo">
+                    <img src="images/logo.png" alt="AI Anvil Logo">
                 </div>
                 <p class="footer-company-name">AI Anvil</p>
             </div>
@@ -127,13 +133,17 @@
             </div>
             <!-- Social links on the bottom right -->
             <div class="footer-right">
-                <a href="https://www.linkedin.com/company/ai-anvil" target="_blank">LinkedIn</a>
-                <a href="https://aianvil.substack.com" target="_blank">SubStack</a>
+                <a href="https://www.linkedin.com/company/ai-anvil" target="_blank">
+                    <img src="images/linkedin_icon.png" alt="LinkedIn">
+                </a>
+                <a href="https://aianvil.substack.com" target="_blank">
+                    <img src="images/substack_icon.png" alt="Substack">
+                </a>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript for the rolling gallery -->
-    <script src="script.js"></script>
+    <!-- JavaScript for interactivity -->
+    <script src="js/script.js"></script>
 </body>
 </html>
