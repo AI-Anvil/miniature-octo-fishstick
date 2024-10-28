@@ -14,3 +14,8 @@ function toggleDetails(element) {
         details.style.display = "none";
     }
 }
+
+// Function to toggle service detail
+function toggleServiceDetail(element) {
+    element.classList.toggle('open');
+}
