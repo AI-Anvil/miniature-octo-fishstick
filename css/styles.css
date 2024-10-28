@@ -62,7 +62,7 @@ nav ul.menu li a:hover {
 /* First Section Styles */
 .first-section {
     padding: 100px 20px;
-    background-image: url('images/your_background_image.jpg'); /* Replace with your image path */
+    background-image: url('images/word-image.png'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
