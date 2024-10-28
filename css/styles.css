@@ -68,9 +68,7 @@ nav ul.menu li a:hover {
 .first-section {
     padding-top: 150px;
     padding-bottom: 150px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-image: url('images/your_background_image.jpg'); /* Replace with your image path */
+    background-image: url('/images/word-image.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
