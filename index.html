@@ -71,34 +71,77 @@
         </section>
 
         <!-- Third Section -->
-        <section id="services" class="third-section">
-            <h2>Our Services</h2>
-            <div class="services-list">
-                <!-- Service Items -->
-                <!-- For Businesses -->
-                <div class="service-item">
-                    <h3 onclick="toggleDetails(this)">For Businesses</h3>
-                    <ul class="service-details">
-                        <li>Strategy Development: Formulating AI integration strategies that align with business objectives.</li>
-                        <li>User Discovery: Conducting in-depth analyses to understand user needs and how AI can enhance customer experiences.</li>
-                        <li>Product Development: Guiding the design and development of AI-driven products that stand out in the market.</li>
-                    </ul>
+<section id="services" class="third-section">
+    <h2>Our Services</h2>
+    <div class="services-container">
+        <!-- For Businesses -->
+        <div class="services-side">
+            <h3>For Businesses</h3>
+            <div class="service-box" onclick="toggleServiceDetail(this)">
+                <div class="service-title">
+                    <h4>Strategy Development</h4>
+                    <span class="toggle-icon">+</span>
                 </div>
-                <!-- For Schools and Districts -->
-                <div class="service-item">
-                    <h3 onclick="toggleDetails(this)">For Schools and Districts</h3>
-                    <ul class="service-details">
-                        <li>Policy Development: Crafting customized AI policies that align with educational goals and ethical standards.</li>
-                        <li>Implementation Plans: Developing step-by-step strategies to seamlessly introduce AI technologies into the learning environment.</li>
-                        <li>Training Sessions and Workshops: Offering professional development programs to equip educators with the skills and knowledge to effectively use AI tools.</li>
-                    </ul>
+                <div class="service-detail">
+                    <p>Formulating AI integration strategies that align with business objectives.</p>
                 </div>
             </div>
-            <!-- Book Consultation Button -->
-            <div class="consultation-button">
-                <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/becoachable/ai-anvil-free-consultation'});return false;">Book Consultation</a>
+            <div class="service-box" onclick="toggleServiceDetail(this)">
+                <div class="service-title">
+                    <h4>User Discovery</h4>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="service-detail">
+                    <p>Conducting in-depth analyses to understand user needs and how AI can enhance customer experiences.</p>
+                </div>
             </div>
-        </section>
+            <div class="service-box" onclick="toggleServiceDetail(this)">
+                <div class="service-title">
+                    <h4>Product Development</h4>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="service-detail">
+                    <p>Guiding the design and development of AI-driven products that stand out in the market.</p>
+                </div>
+            </div>
+        </div>
+        <!-- For Schools -->
+        <div class="services-side">
+            <h3>For Schools and Districts</h3>
+            <div class="service-box" onclick="toggleServiceDetail(this)">
+                <div class="service-title">
+                    <h4>Policy Development</h4>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="service-detail">
+                    <p>Crafting customized AI policies that align with educational goals and ethical standards.</p>
+                </div>
+            </div>
+            <div class="service-box" onclick="toggleServiceDetail(this)">
+                <div class="service-title">
+                    <h4>Implementation Plans</h4>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="service-detail">
+                    <p>Developing step-by-step strategies to seamlessly introduce AI technologies into the learning environment.</p>
+                </div>
+            </div>
+            <div class="service-box" onclick="toggleServiceDetail(this)">
+                <div class="service-title">
+                    <h4>Training Sessions and Workshops</h4>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="service-detail">
+                    <p>Offering professional development programs to equip educators with the skills and knowledge to effectively use AI tools.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Book Consultation Button -->
+    <div class="consultation-button">
+        <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/becoachable/ai-anvil-free-consultation'});return false;">Book Consultation</a>
+    </div>
+</section>
 
         <!-- Fourth Section -->
         <section id="blog" class="fourth-section">
